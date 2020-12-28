@@ -1,4 +1,5 @@
 import React from "react";
+import defaultBook from "../Images/book.gif"
 
 const Book = (props) => {
 
@@ -8,9 +9,10 @@ const Book = (props) => {
         <div className="col s12 m4" >
             <div className="card">
                 <div className="card-image">
-                    {props.data.volumeInfo.imageLinks.thumbnail == null ? (
+                    {props.data.volumeInfo.imageLinks === undefined ? (
                         <img
-                            src="https://picsum.photos/200/300/?blur=2"
+                            //src="https://picsum.photos/200/300/?blur=2"
+                            src={defaultBook}
                             alt={props.data.volumeInfo.title}
                         />
                     ) :
