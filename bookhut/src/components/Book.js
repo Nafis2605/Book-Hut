@@ -25,7 +25,7 @@ const Book = (props) => {
                 </div>
                 <div class="card-content">
                     <span className="card-title" style={{ fontSize: 20 }}>{props.data.volumeInfo.title}</span>
-                    <p><b>Written by: </b>{props.data.volumeInfo.authors[0]} </p>
+                    <p><b>Published by: </b>{props.data.volumeInfo.publisher}</p>
                     <p><b>Rating: </b>{props.data.volumeInfo.averageRating}</p>
                 </div>
             </div>
